@@ -17,6 +17,7 @@ acceptButton.addEventListener('click', function(){
   agreement.style.display = "none"
   back.style.display = "none"
 })
+
 var filledCells = [
    22,23,24,
 
