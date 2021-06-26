@@ -72,7 +72,7 @@ var initialFilledCellsCount = filledCells.length;
 
 console.log (initialFilledCellsCount);
 
-var easterEggIndex = 1206;
+var easterEggIndex = 624;
 
 var fbText = document.querySelector(".fb");
 
