@@ -30,96 +30,50 @@ body {
 
   }
 
-  /* .menu {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  } */
-
-  /* .fb {
-    position: relative;
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-around;
-
-  }
-
-  .myspace {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .lnkd {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .badoo{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .vk{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .tumblr{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .lj{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .snapchat{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .sprashivai{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .liker{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-
-  } */
-
-
-
-
-
-
-  /* .fb {
+  .agreement {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24pt;
+    color: #3366ff;
     position: fixed;
+    width: 50vw;
+    height: 50vh;
+    padding: 50px;
+    overflow: auto;
     background-color: white;
-  } */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 
+  }
 
-  
+  .accept-box {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+
+  }
+
+  .accept {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24pt;
+    color: white;
+    background: #3366ff;
+  }
+
+  .back {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    /* background-color: white; */
+    background-image: url("agreement_pattern.svg");
+
+  }
+
   .box {
     /* margin-top: 3vw; */
     display: flexbox;
@@ -148,7 +102,7 @@ body {
     width: 1920px;
     height: 1080px;
   }
-  
+
   .box_3 {
     /* margin-top: 3vw; */
     display: grid;

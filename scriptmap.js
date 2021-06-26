@@ -9,7 +9,14 @@ for (var i = 0; i < 20; i++) {
   var imgPath = "tiles/tiles-" + imgNumber + ".jpg";
   imgArray.push(imgPath);
 }
+var acceptButton = document.querySelector('.accept')
+var agreement = document.querySelector('.agreement')
+var back = document.querySelector('.back')
 
+acceptButton.addEventListener('click', function(){
+  agreement.style.display = "none"
+  back.style.display = "none"
+})
 var filledCells = [
    22,23,24,
 
