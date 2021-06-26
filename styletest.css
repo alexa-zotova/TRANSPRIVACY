@@ -1,0 +1,29 @@
+
+body {
+    max-width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+    padding-top: 7vw;
+  }
+
+
+@media (max-width: 1920px) {
+}
+
+.box {
+    /* margin-top: 3vw; */
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+    width: 1920px;
+    height: 1080px;
+  }
+
+
+  .item {
+    border: solid 2px black;
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: repeat; */
+    position: relative;
+  }

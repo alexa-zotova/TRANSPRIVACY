@@ -1,3 +1,7 @@
+function randomArrayItem(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
 var imgArray = [];
   
 for (var i = 0; i < 20; i++) {
@@ -68,21 +72,27 @@ var initialFilledCellsCount = filledCells.length;
 
 console.log (initialFilledCellsCount);
 
-var easterEggIndex = 530;
+var easterEggIndex = 1206;
 
-var fbText = document.querySelector("h1");
+var fbText = document.querySelector(".fb");
 
 fbText.style.color = "#3366ff";
+
+var hints = ["breach date: 1 August 2019", "compromised data: dates of birth", "compromised data: email addresses", "compromised data: employers", "compromised data: genders", "compromised data: geographic locations", "compromised data: names", "compromised data: phone numbers", "compromised data: relationship statuses"];
+
+var counter = 741570;
 
 var box = document.querySelector(".box");
 for (let index = 0; index < 1400; index++) {
   const element = document.createElement("div");
   element.classList.add("item");
 
+  var hint = randomArrayItem(hints);
   if (filledCells.includes(index)) {
     var elementText = document.createElement("div");
     elementText.classList.add("item-text");
-    elementText.innerHTML = "breached accounts: 741570";
+    console.log("preset innerHTML");
+    elementText.innerHTML = "breached accounts: " + counter + " " + hint;
     element.appendChild(elementText);
   }
 
@@ -90,12 +100,19 @@ for (let index = 0; index < 1400; index++) {
     // если ячейка заполнена
     if (filledCells.includes(index)) {
       console.log(index);
+      counter += 741570;
+      var hint = randomArrayItem(hints);
+      document.querySelectorAll(".item-text").forEach(function (itemText) {
+        itemText.innerHTML = "breached accounts: " + counter + " " + hint;
+      });
       // то заменить картинку на фоне ячейки
       if (index === easterEggIndex) {
-        // element.style.backgroundImage = "none";
-        element.style.backgroundImage = "url(avatar_pawn.svg)";
+        element.style.backgroundImage = "url(avatar_pawn_.svg)";
+        document.querySelectorAll(".item-text").forEach(function (itemText) {
+          itemText.innerHTML = "your data has been breached: date of birth, email address, employers, gender, geographic location, name, phone numbers, relationship status"
+        });
       } else {
-        element.style.backgroundImage = "url(secret.svg)";
+        element.style.backgroundImage = "url(blue_star.svg)";
       }
 
       // и удалить её индекс из массива индексов заполненных ячеек
@@ -112,7 +129,7 @@ for (let index = 0; index < 1400; index++) {
 var cells = document.querySelectorAll(".item");
 cells.forEach(function (cell, cellIndex) {
   if (filledCells.includes(cellIndex)) {
-    var imageUrl = "url(facebook_tile_new_4.svg)";
+    var imageUrl = "url(facebook_tile.svg)";
     cell.style.backgroundImage = imageUrl;
   }
 });
