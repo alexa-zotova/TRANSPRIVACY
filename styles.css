@@ -14,14 +14,105 @@ body {
   } */
 
   .rect {
+    top: 0;
+    width: 100vw;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     position: fixed;
-    height: 100vh;
+    flex-direction: row;
     background: white;
     z-index: 6;
     margin-top: 0;
-    padding: 25px;
+    padding: 10px;
 
   }
+
+  /* .menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  } */
+
+  /* .fb {
+    position: relative;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+
+  }
+
+  .myspace {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .lnkd {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .badoo{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .vk{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .tumblr{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .lj{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .snapchat{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .sprashivai{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .liker{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+  } */
+
+
+
+
+
+
   /* .fb {
     position: fixed;
     background-color: white;
@@ -41,7 +132,7 @@ body {
 
   .box_1 {
     padding-top: 500px;
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -50,7 +141,7 @@ body {
   }
   
   .box_2 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -59,7 +150,7 @@ body {
   }
 
   .box_3 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -68,7 +159,7 @@ body {
   }
 
   .box_4 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -77,7 +168,7 @@ body {
   }
 
   .box_5 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -86,7 +177,7 @@ body {
   }
 
   .box_6 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -95,7 +186,7 @@ body {
   }
 
   .box_7 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -104,7 +195,7 @@ body {
   }
 
   .box_8 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -113,7 +204,7 @@ body {
   }
 
   .box_9 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
@@ -122,7 +213,7 @@ body {
   }
 
   .box_10 {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     grid-template-rows: repeat(28, 1fr);
